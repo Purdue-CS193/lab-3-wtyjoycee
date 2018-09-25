@@ -1,3 +1,4 @@
+
 public class MathUtils {
     /**
      * divideNumbers -- a / b
@@ -5,7 +6,7 @@ public class MathUtils {
      */
     public static double divideNumbers(int dividend, int divisor) {
         /* Do some casual division ... Super easy ... Shouldn't be any problems here */
-        double res = dividend / divisor;
+        double res = (double)dividend/ divisor;
         /* Return the DEFINITELY CORRECT result */
         return res;
     }
@@ -29,7 +30,7 @@ public class MathUtils {
             Ex: base = 2, exp = 2
                --> res = 2, then res = 4 */
         for (int i = 0; i < exp; i++) {
-           res *= base; 
+           res = (int) Math.pow(base,exp);
         }
 
         /* If it's a negative exponent, we should invert it! */
